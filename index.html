@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+    </head>
+    <body>
+        
+        <script>
+        
+            let arrFiltro=["sales","week"];
+            let arrGraf1=["sales","week"];
+            let arrGraf2=["customers","week"];
+            let arrGraf3=["week"];
+            let arrGraf4=["sales"];
+            let arrGraf5=["month"];
+            let arrGraf6=["week", "sales"];
+
+            let cont=0;
+
+            function fuk() {
+
+                arrFiltro.forEach(function(elemento){
+                    arrGraf1.forEach(function(val){
+                        if(elemento===val){
+                            cont++;
+                        }
+                    })
+                })
+
+                if(cont===arrFiltro.length){
+                    return true;
+                }
+
+                
+                
+            }
+            if(fuk()===true){
+                    console.log("Lo hiciste perro");
+                }
+
+            
+
+
+
+
+            
+
+
+        </script>
+        
+    </body>
+</html>
